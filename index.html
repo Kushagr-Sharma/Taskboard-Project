@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width"/>
+    <meta charset ="utf-8"/>
+    <link type="text/css" href="./css/style.css" rel="stylesheet"/>
+    <script src="./js/script.js"></script>
+    <title>Task Board</title>
+  </head>
+  <body>
+    <h1>Task List</h1>
+    <button id="addNew" onclick="addNew()"></button><!--onclick event will trigger the add new function in javascript which will display a form so that necessary details can be entered-->
+    <ul id ="newEntry">
+      <!--here is where the javascript will add the specific data that is given by user-->
+    </ul>
+    <form id ="inputForm">
+      <label for="taskName" class="mainForm1">Enter the task name  </label><br>
+      <input name="taskName" type="text" id ="taskName" class="mainForm" required/><br>
+      <label for="name" class="mainForm1">Enter your name </label><br>
+      <input name="name" type="text" id ="name" class="mainForm" required/><br>
+      <label for="description"class ="mainForm1">Enter the description </label><br>
+      <textarea name="description" id ="description" class="mainForm" required></textarea><br>
+    </form><!--form only to be displayed when the addNew button is clicked-->
+    <button id="submit" onclick="submit()" class="mainForm3">Add</button> 
+  </body>
+</html>

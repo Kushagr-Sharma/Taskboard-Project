@@ -1,0 +1,100 @@
+/*global*/
+body{
+  margin:2% 10%;
+  font-family: sans-serif, arial, serif;
+  border-radius: 30px;
+  padding:10px;
+  border:2%;
+  border-style: solid;
+  border-color: #000;
+  font-weight: normal;
+  background-image:url("https://images.pexels.com/photos/1250260/pexels-photo-1250260.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-color: #585858;/*incase the image does not load*/
+  background-position: right;
+  background-attachment: fixed;
+  color:#fff;
+  display:block;
+}
+h1{
+  margin-top: 20px;
+  font-size: 20px;
+  display:inline-block;
+}
+ul{
+  list-style-type: none;
+  text-align: left;
+  padding:0;
+}
+/*class and id wise*/
+/*the add new "+" button*/
+#addNew{
+  background: url(../images/plus.png);/*if image doesn't load we will only see a white cirle*/
+  background-size: contain;
+  padding: 2px 2px;
+  border-radius: 20px;
+  border:none;
+  width:30px;
+  height:30px;
+  display: inline-block;
+  float:right;
+  margin-top: 18px;
+}
+#addNew:hover{
+  opacity:0.8;
+}
+/*form that is displayed on the page to take the input information*/
+#inputForm{
+  display:none;
+  margin:20px 0;
+}
+/*form element labels*/
+.mainForm{
+  display:block;
+  width:93%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+/*form elements input(textboxes/areas)*/
+.mainForm1{
+  display:inline-block;
+  margin-left:2.5%;
+  margin-right: 2.5%;
+}
+#description{
+  height:100px;
+}
+#submit{
+  margin:0 39%;
+  border-radius: 20px;
+  background: #000;
+  color:#fff;
+  border:none;
+  width:25%;
+  height:30px;
+  display: none;
+}
+/*list items fed in by js*/
+.entry1{
+  border-top: 2px;
+  display:inline-block;
+  float :left;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 110%;
+}
+.entry2{
+  display:inline-block;
+  float:right;
+  font-weight: lighter;
+  margin-right: 10%;
+  font-size: 70%;
+  margin-top:5px;
+}
+.entry3{
+  margin-top:10px;
+  clear:both;
+  display:inline-block;
+  max-width: 100%;
+  text-overflow: inherit;
+  overflow-wrap: break-word;
+}
