@@ -6,7 +6,7 @@ body{
   padding:10px;
   border:2%;
   border-style: solid;
-  border-color: #000;
+  border-color: #fff;
   font-weight: normal;
   background-image:url("https://images.pexels.com/photos/1250260/pexels-photo-1250260.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-color: #585858;/*incase the image does not load*/
@@ -23,7 +23,18 @@ h1{
 ul{
   list-style-type: none;
   text-align: left;
-  padding:0;
+  padding:2%;
+  padding:4px;
+  margin-top:5px;
+  margin-left: 5px;
+  border-color:#fff;
+}
+div{
+  background-color:#fff;
+  color:#000;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  padding:10px;
 }
 /*class and id wise*/
 /*the add new "+" button*/
@@ -40,7 +51,7 @@ ul{
   margin-top: 18px;
 }
 #addNew:hover{
-  opacity:0.8;
+  opacity:0.5;
 }
 /*form that is displayed on the page to take the input information*/
 #inputForm{
@@ -74,27 +85,62 @@ ul{
   display: none;
 }
 /*list items fed in by js*/
+
 .entry1{
-  border-top: 2px;
   display:inline-block;
   float :left;
   font-weight: bold;
-  font-variant: small-caps;
+  text-decoration: underline;
   font-size: 110%;
+  padding-left:5px;
 }
 .entry2{
+  margin-top: 5px;
   display:inline-block;
-  float:right;
+  clear:both;
+  float:left;
   font-weight: lighter;
   margin-right: 10%;
   font-size: 70%;
-  margin-top:5px;
+  padding-left:5px;
 }
 .entry3{
-  margin-top:10px;
+  margin-top:25px;
+  margin-bottom: 20px;
   clear:both;
-  display:inline-block;
-  max-width: 100%;
+  display:block;
+  max-width: 95%;
   text-overflow: inherit;
   overflow-wrap: break-word;
+  border-bottom:1%;
+  padding:2%;
+  text-align: left;
+  color:#000;
+}
+.delete{
+  background: url(../images/delete.png);/*if image doesn't load we will only see a white cirle*/
+  background-size: contain;
+  padding: 0 4px;
+  clear:both;
+  border-radius: 20px;
+  border:none;
+  width:20px;
+  height:20px;
+  display: inline-block;
+  float:right;
+}
+@media (min-width:767px) and (max-width:1023px){
+  body{
+    margin:0 22%;
+  }
+}
+@media (min-width:1024px) and (max-width:1439px){
+  body{
+    margin:0 31%;
+  }
+}
+@media (min-width:1440px){
+  body{
+    margin:0 35%;
+  }
 }
